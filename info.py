@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'], '17875613')
-API_HASH = environ['API_HASH'], '6798f54a7f74e94f2ef0923fba8a8377'
-BOT_TOKEN = environ['BOT_TOKEN'], '5044295114:AAGVxu5swZHcLQJCDCVCvApdMvH8QYPsz3c'
+API_ID = '17875613'
+API_HASH = '6798f54a7f74e94f2ef0923fba8a8377'
+BOT_TOKEN = '5044295114:AAGVxu5swZHcLQJCDCVCvApdMvH8QYPsz3c'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -32,9 +32,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://k:k@cluster0.aeenl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "K")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = "mongodb+srv://k:k@cluster0.aeenl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_NAME = "K"
+COLLECTION_NAME = 'Telegram_files'
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001666849876'))
